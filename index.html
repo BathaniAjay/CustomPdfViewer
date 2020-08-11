@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ajay's PDF VIEWER</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    <button class="btn" id="prev-button">
+      <i class="fa fa-arrow-circle-left"> Prev Page</i>
+    </button>
+    <button class="btn" id="next-button">
+      <i class="fa fa-arrow-circle-right"> Next Page</i>
+    </button>
+
+    <span class="page-info">
+      Page <span id="page-num"></span> of <span id="page-total"></span>
+    </span>
+  </div>
+  <canvas id="pdf-render"></canvas>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.5.207/pdf.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
